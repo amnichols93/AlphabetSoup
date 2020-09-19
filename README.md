@@ -1,0 +1,11 @@
+# Module 19 Challenge
+### How many neurons and layers did you select for your neural network model? Why?
+I chose 8 neurons with 2 layers for my neural network model. I reviewed the module regaring choosing the number of neurons and it stated to pick 2-3 times the amount of inputs. The number of inputs in this case is approximately 50, so I initially tried 100 neurons with 6 hidden layers (chosen simply because of the rate I wanted to diminish the neurons across the layers) and got an accuracy score of 72.55%. I reviewed the module again, and the practice model had a similar amount of inputs but there were only 8 neurons with two layers. I ran that same model with the challenge data and I got an accuracy score of 72.57%. Not only did the 8-neuron-2-layer model have a (barely) higher accuracy, but it was significantly less code and processing effort for my server.
+
+### Were you able to achieve the target model performance? What steps did you take to try and increase model performance?
+I was a few percentages short of the 75% goal, with a final accuracy rate of 72.6%. I tried other models (Logistic Regression, RandomForest, SVM) to try getting a better accuracy rate and all fell short. I tried changing the neuron and layer counts, but the differences were either negligible or nonexistent. I also tried excluding certain features, thinking maybe the model was weighing certain features too heavily and skewing the results, but each time I eliminated a feature my accuracy decreased. I also tried running the models prior to scaling the data, and my accuracy dropped dramatically to 49-55%.
+
+I am still trying to discern why the model accuracy does not match what is printed with the epochs, because in the individual epochs I was able to get as high as 74.3% accuracy with the deep neural network model that had 100 neurons and 6 layers. If that was the figure I was able to ensure, then I would change my response to the prior question.
+
+### If you were to implement a different model to solve this classification problem, which would you choose? Why?
+I would not use a different model because they all produced lower accuracy rates, but if I had to choose a different model then I would use SVM because it produced the closest accuracy with 72%.
